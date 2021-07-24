@@ -106,6 +106,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _showSeventhPage(context);
                },
               ),
+              RaisedButton(
+                child: Text("Mostrar octava pantalla"),
+                onPressed: (){
+                _showEigthPage(context);
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,
@@ -155,6 +161,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _showSeventhPage(BuildContext context) {
     Navigator.of(context).pushNamed("kseventh"
+    );
+  }
+
+  void _showEigthPage(BuildContext context) {
+    Navigator.of(context).pushNamed("keighth"
     );
   }
 
