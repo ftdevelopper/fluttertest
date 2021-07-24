@@ -25,6 +25,7 @@ class _AnimatedContainerWidgetState extends State<AnimatedContainerWidget> {
            curve: Curves.elasticOut,
            height: _height,
            width: _width,
+           color: Colors.amber,
            child: FlatButton(
              child: Text('Tap to\nGrow Width\n$_width'),
              onPressed: (){

@@ -165,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void _showEigthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("keighth"
+    Navigator.of(context).pushNamed("keight"
     );
   }
 

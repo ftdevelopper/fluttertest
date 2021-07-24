@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyect_first/widgets/animated_container.dart';
 
 class EigthPage extends StatefulWidget {
   EigthPage({Key? key}) : super(key: key);
@@ -10,8 +11,17 @@ class EigthPage extends StatefulWidget {
 class _EigthPageState extends State<EigthPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: null,
+    return Scaffold(
+       appBar: AppBar(
+         title: Text('Animations'),
+       ),
+       body: SafeArea(
+         child: Column(
+           children: <Widget>[
+             AnimatedContainerWidget(),
+           ],
+        ),
+      ),
     );
   }
 }
