@@ -88,6 +88,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 _showFourthPage(context);
                },
               ),
+              RaisedButton(
+                child: Text("Mostrar quinta pantalla"),
+                onPressed: (){
+                _showFifthPage(context);
+               },
+              ),
+              RaisedButton(
+                child: Text("Mostrar sexta pantalla"),
+                onPressed: (){
+                _showSixthPage(context);
+               },
+              ),
+              RaisedButton(
+                child: Text("Mostrar septima pantalla"),
+                onPressed: (){
+                _showSeventhPage(context);
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,
@@ -125,9 +143,23 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  void _showFifthPage(BuildContext context) {
+    Navigator.of(context).pushNamed("kfifth"
+    );
+  }
+
+  void _showSixthPage(BuildContext context) {
+    Navigator.of(context).pushNamed("ksixth"
+    );
+  }
+
+  void _showSeventhPage(BuildContext context) {
+    Navigator.of(context).pushNamed("kseventh"
+    );
+  }
+
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     nameTextController = TextEditingController();
     lastNameTextController = TextEditingController();
@@ -137,7 +169,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void dispose() {
-    //TODO: implement dispose
     super.dispose();
     nameTextController.dispose();
     lastNameTextController.dispose();
