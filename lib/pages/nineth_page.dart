@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:proyect_first/widgets/animated_baloon.dart';
 
 class NinethPage extends StatelessWidget {
   const NinethPage({Key? key}) : super(key: key);
@@ -10,7 +11,19 @@ class NinethPage extends StatelessWidget {
         title: Text('Novena Pantalla'),
         backgroundColor: Colors.amber,
       ),
-      body: ,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          physics: NeverScrollableScrollPhysics(),
+          child: Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Column(
+              children: <Widget>[
+                AnimatedBalloonWidget(),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
