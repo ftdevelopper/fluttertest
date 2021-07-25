@@ -112,6 +112,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _showEigthPage(context);
                },
               ),
+              RaisedButton(
+                child: Text("Mostrar novena pantalla"),
+                onPressed: (){
+                _showNinethPage(context);
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,
@@ -166,6 +172,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _showEigthPage(BuildContext context) {
     Navigator.of(context).pushNamed("keight"
+    );
+  }
+
+  void _showNinethPage(BuildContext context) {
+    Navigator.of(context).pushNamed("knineht"
     );
   }
 

@@ -8,6 +8,7 @@ import 'package:proyect_first/pages/sixth_page.dart';
 import 'package:proyect_first/pages/third_page.dart';
 import 'package:proyect_first/pages/fifth_page.dart';
 import 'pages/eight_page.dart';
+import 'pages/nineth_page.dart';
 import 'pages/seventh_page.dart';
 
 void main() => runApp(MyApp());
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         "ksixth":(BuildContext context) => SixthPage(),
         "kseventh":(BuildContext context) => SeventhPage(),
         "keight":(BuildContext context) => EigthPage(),
+        "knineht":(BuildContext context) => NinethPage(),
       },
     );
   }
