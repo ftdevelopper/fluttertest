@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/widgets/animated_container.dart';
 import 'package:proyect_first/widgets/animated_cross_fade.dart';
+import 'package:proyect_first/widgets/animated_opacity.dart';
 
 class EigthPage extends StatefulWidget {
   EigthPage({Key? key}) : super(key: key);
@@ -22,6 +23,8 @@ class _EigthPageState extends State<EigthPage> {
              AnimatedContainerWidget(),
              Divider(),
              AnimatedCrossFadeWidget(),
+             Divider(),
+             AnimatedOpacityWidget(),
            ],
         ),
       ),
