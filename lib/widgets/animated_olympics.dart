@@ -19,6 +19,7 @@ class _AnimatedOlympicWidgetState extends State<AnimatedOlympicWidget> with Sing
   }
 
   @override
+  // ignore: must_call_super
   void dispose(){
     _controller.dispose();
     super.dispose;

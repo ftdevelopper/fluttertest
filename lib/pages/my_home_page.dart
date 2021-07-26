@@ -124,6 +124,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 _showTenthPage(context);
                },
               ),
+              GestureDetector(
+                child: Hero(
+                  tag: 'format_paint',
+                  child: Icon(
+                    Icons.format_paint,
+                    color: Colors.lightGreen,
+                    size:80,
+                    )
+                ),
+                onTap: (){
+                  Navigator.of(context).pushNamed("kfly"
+                  );
+                }
+              ),
               Container(
                 height: 800,
                 width: 20,

@@ -8,6 +8,7 @@ import 'package:proyect_first/pages/sixth_page.dart';
 import 'package:proyect_first/pages/third_page.dart';
 import 'package:proyect_first/pages/fifth_page.dart';
 import 'pages/eight_page.dart';
+import 'pages/fly_page.dart';
 import 'pages/nineth_page.dart';
 import 'pages/seventh_page.dart';
 import 'pages/tenty_page.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         "keight":(BuildContext context) => EigthPage(),
         "knineht":(BuildContext context) => NinethPage(),
         "ktenht":(BuildContext context) => TenthPage(),
+        "kfly":(BuildContext context) => FlyPage(),
       },
     );
   }
