@@ -138,6 +138,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 }
               ),
+              RaisedButton(
+                child: Text("Mostrar onceava pantalla"),
+                onPressed: (){
+                _showEleventhPage(context);
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,
@@ -202,6 +208,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _showTenthPage(BuildContext context) {
     Navigator.of(context).pushNamed("ktenht"
+    );
+  }
+
+  void _showEleventhPage(BuildContext context) {
+    Navigator.of(context).pushNamed("keleventh"
     );
   }
 
