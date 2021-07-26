@@ -85,43 +85,43 @@ class _MyHomePageState extends State<MyHomePage> {
               RaisedButton(
                 child: Text("Mostrar cuarta pantalla"),
                 onPressed: (){
-                _showFourthPage(context);
+                _quickShowPage(context, "kfourth");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar quinta pantalla"),
                 onPressed: (){
-                _showFifthPage(context);
+                _quickShowPage(context, "kfifth");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar sexta pantalla"),
                 onPressed: (){
-                _showSixthPage(context);
+                _quickShowPage(context, "ksixth");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar septima pantalla"),
                 onPressed: (){
-                _showSeventhPage(context);
+                _quickShowPage(context, "kseventh");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar octava pantalla"),
                 onPressed: (){
-                _showEigthPage(context);
+                _quickShowPage(context, "keigth");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar novena pantalla"),
                 onPressed: (){
-                _showNinethPage(context);
+                _quickShowPage(context, "knineth");
                },
               ),
               RaisedButton(
                 child: Text("Mostrar decima pantalla"),
                 onPressed: (){
-                _showTenthPage(context);
+                _quickShowPage(context, "ktenth");
                },
               ),
               GestureDetector(
@@ -134,14 +134,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                 ),
                 onTap: (){
-                  Navigator.of(context).pushNamed("kfly"
-                  );
+                  Navigator.of(context).pushNamed("kfly");
                 }
               ),
               RaisedButton(
                 child: Text("Mostrar onceava pantalla"),
                 onPressed: (){
-                _showEleventhPage(context);
+                _quickShowPage(context, "keleventh");
                },
               ),
               Container(
@@ -176,44 +175,8 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _showFourthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("kfourth"
-    );
-  }
-
-  void _showFifthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("kfifth"
-    );
-  }
-
-  void _showSixthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("ksixth"
-    );
-  }
-
-  void _showSeventhPage(BuildContext context) {
-    Navigator.of(context).pushNamed("kseventh"
-    );
-  }
-
-  void _showEigthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("keight"
-    );
-  }
-
-  void _showNinethPage(BuildContext context) {
-    Navigator.of(context).pushNamed("knineht"
-    );
-  }
-
-  void _showTenthPage(BuildContext context) {
-    Navigator.of(context).pushNamed("ktenht"
-    );
-  }
-
-  void _showEleventhPage(BuildContext context) {
-    Navigator.of(context).pushNamed("keleventh"
-    );
+  void _quickShowPage(BuildContext context, String _direction){
+    Navigator.of(context).pushNamed(_direction);
   }
 
   @override
