@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/pages/birthday.dart';
 import 'package:proyect_first/pages/gratitude.dart';
+import 'package:proyect_first/widgets/left_drawer.dart';
+import 'package:proyect_first/widgets/right_drawer.dart';
 import 'reminders.dart';
 
 class TwelvePage extends StatefulWidget {
@@ -43,6 +45,8 @@ class _TwelvePageState extends State<TwelvePage> with TickerProviderStateMixin {
       appBar: AppBar(
 
       ),
+      drawer: const LeftDrawerWidget(),
+      endDrawer: const RightDrawerWidget(),
       body: SafeArea(
         child: TabBarView(
           controller: _tabController,
