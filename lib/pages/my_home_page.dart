@@ -143,6 +143,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "keleventh");
                },
               ),
+              RaisedButton(
+                child: Text("Mostrar doceava pantalla"),
+                onPressed: (){
+                _quickShowPage(context, "ktwelveth");
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,

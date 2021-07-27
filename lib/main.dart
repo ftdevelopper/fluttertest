@@ -13,6 +13,7 @@ import 'pages/fly_page.dart';
 import 'pages/nineth_page.dart';
 import 'pages/seventh_page.dart';
 import 'pages/tenty_page.dart';
+import 'pages/twelve_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "ktenth":(BuildContext context) => TenthPage(),
         "kfly":(BuildContext context) => FlyPage(),
         "keleventh":(BuildContext context) => ElevenPage(),
+        "ktwelveth":(BuildContext context) => TwelvePage(),
       },
     );
   }
