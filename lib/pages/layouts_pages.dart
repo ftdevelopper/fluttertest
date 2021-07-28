@@ -22,4 +22,31 @@ class LayoutPage extends StatelessWidget {
       body: _buildBody(),
     );
   }
+
+  _buildBody(){
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+          _buildJournalHeaderImage(),
+          SafeArea(
+            child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  _buildJournalEntry(),
+                  Divider(),
+                  _buildJournalWeather(),
+                  Divider(),
+                  _buildJournalTags(),
+                  Divider(),
+                  _buildJournalFooterImages(),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
