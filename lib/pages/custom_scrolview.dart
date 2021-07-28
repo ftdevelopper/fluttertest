@@ -9,21 +9,15 @@ class CustomScrollViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Custom Scroll View', style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.bold,
-          ),
+      body: SafeArea(
+        child:CustomScrollView(
+          slivers: <Widget>[
+            const SilverAppBarWidget(),
+            const SliverListWidget(),
+            const SliverGridWidget(),
+          ],
         ),
-        elevation: 0.0,
       ),
-      body: CustomScrollView(
-        slivers: <Widget>[
-          const SilverAppBarWidget(),
-          const SliverListWidget(),
-          const SliverGridWidget(),
-        ],
-      )
     );
   }
 }
