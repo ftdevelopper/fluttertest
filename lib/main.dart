@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:proyect_first/pages/fourth_page.dart';
+import 'package:proyect_first/pages/gridview.dart';
 import 'package:proyect_first/pages/listview_page.dart';
 import 'package:proyect_first/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
         "keleventh":(BuildContext context) => ElevenPage(),
         "ktwelveth":(BuildContext context) => TwelvePage(),
         "klistview":(BuildContext context) => ListViewPage(),
+        "kgridview":(BuildContext context) => GridViewPage(),
       },
     );
   }

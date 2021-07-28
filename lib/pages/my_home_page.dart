@@ -155,11 +155,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "klistview");
                },
               ),
-              Container(
-                height: 800,
-                width: 20,
-                color: Colors.black,
-              )
+              RaisedButton(
+                child: Text("Grid View Page"),
+                onPressed: (){
+                _quickShowPage(context, "kgridview");
+               },
+              ),
             ] 
           ),
         )
