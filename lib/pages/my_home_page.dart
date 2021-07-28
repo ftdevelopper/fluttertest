@@ -173,6 +173,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "kcustomsv");
                },
               ),
+              RaisedButton(
+                child: Text("Layout Page"),
+                onPressed: (){
+                _quickShowPage(context, "klayout");
+               },
+              ),
             ] 
           ),
         )

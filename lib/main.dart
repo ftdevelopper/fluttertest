@@ -3,6 +3,7 @@
 import 'package:proyect_first/pages/custom_scrolview.dart';
 import 'package:proyect_first/pages/fourth_page.dart';
 import 'package:proyect_first/pages/gridview.dart';
+import 'package:proyect_first/pages/layouts_pages.dart';
 import 'package:proyect_first/pages/listview_page.dart';
 import 'package:proyect_first/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         "kgridview":(BuildContext context) => GridViewPage(),
         "kstack":(BuildContext context) => StackPage(),
         "kcustomsv":(BuildContext context) => CustomScrollViewPage(),
+        "klayout":(BuildContext context) => LayoutPage(),
       },
     );
   }
