@@ -8,7 +8,7 @@ class StackWidget extends StatelessWidget {
     return Stack(
       children:<Widget> [
         Image(
-          image: AssetImage('assets/lion.jpg'),
+          image: AssetImage('assets/dawn.jpg'),
         ),
         Positioned(
           bottom: 10.0,
