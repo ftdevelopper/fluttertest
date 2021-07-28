@@ -26,11 +26,6 @@ class _TwelvePageState extends State<TwelvePage> with TickerProviderStateMixin {
   @override
   void dispose(){
     super.dispose();
-    @override
-    void dispose(){
-      _tabController.dispose();
-      super.dispose();
-    }
     _tabController.dispose();
   }
 

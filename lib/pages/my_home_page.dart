@@ -149,6 +149,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "ktwelveth");
                },
               ),
+              RaisedButton(
+                child: Text("List View Page"),
+                onPressed: (){
+                _quickShowPage(context, "klistview");
+               },
+              ),
               Container(
                 height: 800,
                 width: 20,
