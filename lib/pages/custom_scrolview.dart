@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:proyect_first/widgets/silver_app_bar.dart';
+import 'package:proyect_first/widgets/sliver_list.dart';
 
 class CustomScrollViewPage extends StatelessWidget {
   const CustomScrollViewPage({Key? key}) : super(key: key);
@@ -16,7 +18,8 @@ class CustomScrollViewPage extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: <Widget>[
-          
+          const SilverAppBarWidget(),
+          const SliverListWidget(),
         ],
       )
     );
