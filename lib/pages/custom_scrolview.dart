@@ -5,8 +5,20 @@ class CustomScrollViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: null,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Custom Scroll View', style: TextStyle(
+          color: Colors.yellowAccent,
+          fontWeight: FontWeight.bold,
+          ),
+        ),
+        elevation: 0.0,
+      ),
+      body: CustomScrollView(
+        slivers: <Widget>[
+          
+        ],
+      )
     );
   }
 }
