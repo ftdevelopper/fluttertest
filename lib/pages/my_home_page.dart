@@ -161,6 +161,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "kgridview");
                },
               ),
+              RaisedButton(
+                child: Text("Stack Page"),
+                onPressed: (){
+                _quickShowPage(context, "kstack");
+               },
+              ),
             ] 
           ),
         )

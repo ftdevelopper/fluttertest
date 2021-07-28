@@ -7,6 +7,7 @@ import 'package:proyect_first/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:proyect_first/pages/second_page.dart';
 import 'package:proyect_first/pages/sixth_page.dart';
+import 'package:proyect_first/pages/stack_page.dart';
 import 'package:proyect_first/pages/third_page.dart';
 import 'package:proyect_first/pages/fifth_page.dart';
 import 'pages/eight_page.dart';
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         "ktwelveth":(BuildContext context) => TwelvePage(),
         "klistview":(BuildContext context) => ListViewPage(),
         "kgridview":(BuildContext context) => GridViewPage(),
+        "kstack":(BuildContext context) => StackPage(),
       },
     );
   }
