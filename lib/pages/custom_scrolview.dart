@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/widgets/silver_app_bar.dart';
+import 'package:proyect_first/widgets/sliver_grid.dart';
 import 'package:proyect_first/widgets/sliver_list.dart';
 
 class CustomScrollViewPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class CustomScrollViewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Custom Scroll View', style: TextStyle(
-          color: Colors.yellowAccent,
+          color: Colors.white,
           fontWeight: FontWeight.bold,
           ),
         ),
@@ -20,6 +21,7 @@ class CustomScrollViewPage extends StatelessWidget {
         slivers: <Widget>[
           const SilverAppBarWidget(),
           const SliverListWidget(),
+          const SliverGridWidget(),
         ],
       )
     );
