@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
+import 'package:proyect_first/pages/custom_scrolview.dart';
 import 'package:proyect_first/pages/fourth_page.dart';
 import 'package:proyect_first/pages/gridview.dart';
 import 'package:proyect_first/pages/listview_page.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         "klistview":(BuildContext context) => ListViewPage(),
         "kgridview":(BuildContext context) => GridViewPage(),
         "kstack":(BuildContext context) => StackPage(),
+        "kcustomsv":(BuildContext context) => CustomScrollViewPage(),
       },
     );
   }

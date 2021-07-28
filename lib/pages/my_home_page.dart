@@ -167,6 +167,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "kstack");
                },
               ),
+              RaisedButton(
+                child: Text("Custom Sroll View Page"),
+                onPressed: (){
+                _quickShowPage(context, "kcustomsv");
+               },
+              ),
             ] 
           ),
         )
