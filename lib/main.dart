@@ -1,22 +1,22 @@
 // ignore_for_file: prefer_const_constructors_in_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
-import 'package:proyect_first/pages/custom_scrolview.dart';
-import 'package:proyect_first/pages/fourth_page.dart';
-import 'package:proyect_first/pages/gridview.dart';
-import 'package:proyect_first/pages/layouts_pages.dart';
-import 'package:proyect_first/pages/listview_page.dart';
-import 'package:proyect_first/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:proyect_first/pages/sixth_page.dart';
-import 'package:proyect_first/pages/stack_page.dart';
-import 'package:proyect_first/pages/fifth_page.dart';
-import 'pages/eight_page.dart';
-import 'pages/eleventh_page.dart';
+import 'pages/animation_page.dart';
+import 'pages/basic_widgets_page.dart';
+import 'pages/bottom_navigator_page.dart';
+import 'pages/custom_scrolview.dart';
 import 'pages/fly_page.dart';
-import 'pages/nineth_page.dart';
-import 'pages/seventh_page.dart';
-import 'pages/tenty_page.dart';
-import 'pages/twelve_page.dart';
+import 'pages/animation_controller_page.dart';
+import 'pages/form_widget_page.dart';
+import 'pages/gridview.dart';
+import 'pages/image_and_icons_page.dart';
+import 'pages/layouts_pages.dart';
+import 'pages/listview_page.dart';
+import 'pages/my_home_page.dart';
+import 'pages/orientation_check_page.dart';
+import 'pages/stack_page.dart';
+import 'pages/stragged_animation_page.dart';
+import 'pages/tabbar_page.dart';
 
 void main() => runApp(MyApp());
 
