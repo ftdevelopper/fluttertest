@@ -20,6 +20,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurple.shade900,
       appBar: AppBar(
         centerTitle: true,
         title: Text("Beginner Flutter Exercises"),
@@ -139,6 +140,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text("Layout ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "/layout");
+               },
+              ),
+              RaisedButton(
+                color: Colors.blueAccent,
+                child: Text("Drag And Drop", style: TextStyle(color: Colors.white, fontSize: 20.0),),
+                onPressed: (){
+                _quickShowPage(context, "/draganddrop");
                },
               ),
             ] 
