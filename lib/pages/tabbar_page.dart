@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:proyect_first/pages/birthday.dart';
-import 'package:proyect_first/pages/gratitude.dart';
+import 'package:proyect_first/widgets/birthday.dart';
+import 'package:proyect_first/widgets/gratitude.dart';
 import 'package:proyect_first/widgets/left_drawer.dart';
 import 'package:proyect_first/widgets/right_drawer.dart';
-import 'reminders.dart';
+import '../widgets/reminders.dart';
 
-class TwelvePage extends StatefulWidget {
-  TwelvePage({Key? key}) : super(key: key);
+class TabBarPage extends StatefulWidget {
+  TabBarPage({Key? key}) : super(key: key);
 
   @override
-  _TwelvePageState createState() => _TwelvePageState();
+  _TabBarPageState createState() => _TabBarPageState();
 }
 
-class _TwelvePageState extends State<TwelvePage> with TickerProviderStateMixin {
+class _TabBarPageState extends State<TabBarPage> with TickerProviderStateMixin {
   late TabController _tabController;
 
   @override

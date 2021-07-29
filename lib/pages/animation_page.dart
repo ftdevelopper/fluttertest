@@ -3,14 +3,14 @@ import 'package:proyect_first/widgets/animated_container.dart';
 import 'package:proyect_first/widgets/animated_cross_fade.dart';
 import 'package:proyect_first/widgets/animated_opacity.dart';
 
-class EigthPage extends StatefulWidget {
-  EigthPage({Key? key}) : super(key: key);
+class AnimationPage extends StatefulWidget {
+  AnimationPage({Key? key}) : super(key: key);
 
   @override
-  _EigthPageState createState() => _EigthPageState();
+  _AnimationPageState createState() => _AnimationPageState();
 }
 
-class _EigthPageState extends State<EigthPage> {
+class _AnimationPageState extends State<AnimationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

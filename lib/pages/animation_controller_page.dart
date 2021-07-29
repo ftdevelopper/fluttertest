@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/widgets/animated_baloon.dart';
 
-class NinethPage extends StatelessWidget {
-  const NinethPage({Key? key}) : super(key: key);
+class AnimationControllerPage extends StatelessWidget {
+  const AnimationControllerPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

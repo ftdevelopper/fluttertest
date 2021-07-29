@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proyect_first/pages/birthday.dart';
-import 'package:proyect_first/pages/gratitude.dart';
-import 'package:proyect_first/pages/reminders.dart';
+import 'package:proyect_first/widgets/birthday.dart';
+import 'package:proyect_first/widgets/gratitude.dart';
+import 'package:proyect_first/widgets/reminders.dart';
 
 class MenuListTitleWidget extends StatefulWidget {
   MenuListTitleWidget({Key? key}) : super(key: key);

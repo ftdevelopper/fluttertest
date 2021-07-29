@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class FifthPage extends StatelessWidget{
-  const FifthPage({Key? key}) : super (key: key);
+class ImageAndIconsPage extends StatelessWidget{
+  const ImageAndIconsPage({Key? key}) : super (key: key);
 
   @override 
   Widget build(BuildContext context){

@@ -1,18 +1,18 @@
   // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'birthday.dart';
-import 'gratitude.dart';
-import 'reminders.dart';
+import '../widgets/birthday.dart';
+import '../widgets/gratitude.dart';
+import '../widgets/reminders.dart';
 
-class ElevenPage extends StatefulWidget {
-  ElevenPage({Key? key}) : super(key: key);
+class BottomNavigatorPage extends StatefulWidget {
+  BottomNavigatorPage({Key? key}) : super(key: key);
 
   @override
-  _ElevenPageState createState() => _ElevenPageState();
+  _BottomNavigatorPageState createState() => _BottomNavigatorPageState();
 }
 
-class _ElevenPageState extends State<ElevenPage> {
+class _BottomNavigatorPageState extends State<BottomNavigatorPage> {
   int _currentIndex = 0;
   List _listPages = [];
   late Widget _currentPage;

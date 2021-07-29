@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/widgets/stack.dart';
-
-import 'stack_favorite.dart';
+import '../widgets/stack_favorite.dart';
 
 class StackPage extends StatelessWidget {
   const StackPage({Key? key}) : super(key: key);

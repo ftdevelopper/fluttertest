@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class SixthPage extends StatefulWidget {
-  SixthPage({Key? key}) : super(key: key);
+class FormWidgetPage extends StatefulWidget {
+  FormWidgetPage({Key? key}) : super(key: key);
 
   @override
-  _SixthPageState createState() => _SixthPageState();
+  _FormWidgetPageState createState() => _FormWidgetPageState();
 }
 
-class _SixthPageState extends State<SixthPage> {
+class _FormWidgetPageState extends State<FormWidgetPage> {
   final GlobalKey<FormState> _formStateKey = GlobalKey<FormState>();
 
   final Order _order = Order();

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class SeventhPage extends StatefulWidget {
-  SeventhPage({Key? key}) : super(key: key);
+class OrientationCheckPage extends StatefulWidget {
+  OrientationCheckPage({Key? key}) : super(key: key);
 
   @override
-  _SeventhPageState createState() => _SeventhPageState();
+  _OrientationCheckPageState createState() => _OrientationCheckPageState();
 }
 
 class OrintationLayoutIconsWidget extends StatelessWidget{
@@ -108,7 +108,7 @@ class OrientationBuilderWidget extends StatelessWidget {
   }
 }
 
-class _SeventhPageState extends State<SeventhPage> {
+class _OrientationCheckPageState extends State<OrientationCheckPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

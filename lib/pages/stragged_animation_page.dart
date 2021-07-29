@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:proyect_first/widgets/animated_olympics.dart';
 
-class TenthPage extends StatelessWidget {
-  const TenthPage({Key? key}) : super(key: key);
+class StraggedAnimationPage extends StatelessWidget {
+  const StraggedAnimationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
