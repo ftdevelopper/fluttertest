@@ -1,8 +1,6 @@
 // ignore_for_file: file_names, use_key_in_widget_constructors, prefer_const_constructors, deprecated_member_use, unnecessary_this
 
 import 'package:flutter/material.dart';
-import 'package:proyect_first/pages/second_page.dart';
-import 'package:proyect_first/pages/third_page.dart';
 
 class MyHomePage extends StatefulWidget {
 
@@ -23,103 +21,60 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Uso basico del Navigator"),
+        centerTitle: true,
+        title: Text("Beginner Flutter Exercises"),
+        backgroundColor: Colors.blue.shade900,
       ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: ListView(
             children: <Widget>[
-              TextField(
-                decoration: InputDecoration(labelText: "Nombre:"),
-                controller: nameTextController,
-              ),
-              TextField(
-                decoration: InputDecoration(labelText: "Apellido:"),
-                controller: lastNameTextController,
-              ),
               RaisedButton(
-                child: Text("Mostrar segunda pantalla"),
-                onPressed: (){
-                _showSecondPage(context);
-               },
-              ),
-              Form(
-                key: formKey,
-                child: 
-                  Column(
-                     children: <Widget>[
-                      TextFormField(
-                      decoration: InputDecoration(labelText: "Numero de telefono:"),
-                      keyboardType: TextInputType.phone,
-                      onSaved: (value){
-                        nameValue = value!;
-                      },
-                      validator: (value) {
-                        if(value!.isEmpty){
-                          return "Llene este campo";
-                        }
-                      }
-                      ),
-                      TextFormField(
-                      decoration: InputDecoration(labelText: "Fecha:"),
-                      keyboardType: TextInputType.datetime,
-                      onSaved: (value){
-                        lastNameValue = value!;
-                      },
-                      validator: (value) {
-                        if(value!.isEmpty){
-                          return "Llene este campo";
-                        }
-                      }
-                      ),
-                      RaisedButton(
-                        child: Text("Mostrar tercera pantalla"),
-                        onPressed: (){
-                        _showThirdPage(context);
-                        },
-                      ),
-                    ],  
-                  )
-              ),
-              RaisedButton(
-                child: Text("Mostrar cuarta pantalla"),
+                color: Colors.grey,
+                child: Text("Basic Widgets", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kfourth");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar quinta pantalla"),
+                color: Colors.blueAccent,
+                child: Text("Image and Icons", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kfifth");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar sexta pantalla"),
+                color: Colors.grey,
+                child: Text("Form Widget", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "ksixth");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar septima pantalla"),
+                color: Colors.blueAccent,
+                child: Text("Orientation Check", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kseventh");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar octava pantalla"),
+                color: Colors.grey,
+                child: Text("Animataions", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "keigth");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar novena pantalla"),
+                color: Colors.blueAccent,
+                child: Text("Animation Controller", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "knineth");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar decima pantalla"),
+                color: Colors.grey,
+                child: Text("Stargged Animation", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "ktenth");
                },
@@ -131,50 +86,57 @@ class _MyHomePageState extends State<MyHomePage> {
                     Icons.format_paint,
                     color: Colors.lightGreen,
                     size:80,
-                    )
+                  )
                 ),
                 onTap: (){
                   Navigator.of(context).pushNamed("kfly");
                 }
               ),
               RaisedButton(
-                child: Text("Mostrar onceava pantalla"),
+                color: Colors.grey,
+                child: Text("Bottom Navigation Bar", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "keleventh");
                },
               ),
               RaisedButton(
-                child: Text("Mostrar doceava pantalla"),
+                color: Colors.blueAccent,
+                child: Text("TabBar and TabBarView", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "ktwelveth");
                },
               ),
               RaisedButton(
-                child: Text("List View Page"),
+                color: Colors.grey,
+                child: Text("List View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "klistview");
                },
               ),
               RaisedButton(
-                child: Text("Grid View Page"),
+                color: Colors.blueAccent,
+                child: Text("Grid View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kgridview");
                },
               ),
               RaisedButton(
-                child: Text("Stack Page"),
+                color: Colors.grey,
+                child: Text("Stack ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kstack");
                },
               ),
               RaisedButton(
-                child: Text("Custom Sroll View Page"),
+                color: Colors.blueAccent,
+                child: Text("Custom Sroll View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "kcustomsv");
                },
               ),
               RaisedButton(
-                child: Text("Layout Page"),
+                color: Colors.grey,
+                child: Text("Layout ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
                 _quickShowPage(context, "klayout");
                },
@@ -182,26 +144,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ] 
           ),
         )
-      )
-    );
-  }
-
-  void _showSecondPage(BuildContext context) {
-    Navigator.of(context).pushNamed("ksecond",
-     arguments: SecondPageArguments( 
-       name: nameTextController.text,
-       lastName: lastNameTextController.text)
-    );
-  }
-
-  void _showThirdPage(BuildContext context) {
-    if(formKey.currentState!.validate()){
-      formKey.currentState!.save();
-    }
-    Navigator.of(context).pushNamed("kthird",
-    arguments: ThirdPageArguments(
-      name: this.nameValue, 
-      lastName: this.lastNameValue
       )
     );
   }

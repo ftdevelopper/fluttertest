@@ -7,10 +7,8 @@ import 'package:proyect_first/pages/layouts_pages.dart';
 import 'package:proyect_first/pages/listview_page.dart';
 import 'package:proyect_first/pages/my_home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:proyect_first/pages/second_page.dart';
 import 'package:proyect_first/pages/sixth_page.dart';
 import 'package:proyect_first/pages/stack_page.dart';
-import 'package:proyect_first/pages/third_page.dart';
 import 'package:proyect_first/pages/fifth_page.dart';
 import 'pages/eight_page.dart';
 import 'pages/eleventh_page.dart';
@@ -31,8 +29,6 @@ class MyApp extends StatelessWidget {
       initialRoute: "k",
       routes: {
         "khome":(BuildContext context) => MyHomePage(),
-        "ksecond":(BuildContext context) => SecondPage(),
-        "kthird":(BuildContext context) => ThirdPage(),
         "kfourth":(BuildContext context) => FourthPage(),
         "kfifth":(BuildContext context) => FifthPage(),
         "ksixth":(BuildContext context) => SixthPage(),
