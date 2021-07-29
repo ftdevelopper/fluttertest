@@ -343,6 +343,6 @@ class PopupMenuButtonWidget extends StatelessWidget implements PreferredSizeWidg
 }
 
 void _showHome(BuildContext context) {
-    Navigator.of(context).pushNamed("khome"
+    Navigator.of(context).pushNamed("/home"
     );
   }

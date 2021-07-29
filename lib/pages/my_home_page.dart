@@ -34,49 +34,49 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.grey,
                 child: Text("Basic Widgets", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kfourth");
+                _quickShowPage(context, "/basicwidget");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("Image and Icons", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kfifth");
+                _quickShowPage(context, "/imageandicons");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Form Widget", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "ksixth");
+                _quickShowPage(context, "/formatwidget");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("Orientation Check", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kseventh");
+                _quickShowPage(context, "/orientationcheck");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Animataions", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "keigth");
+                _quickShowPage(context, "/animation");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("Animation Controller", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "knineth");
+                _quickShowPage(context, "/animationcontroller");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Stargged Animation", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "ktenth");
+                _quickShowPage(context, "/straggedanimation");
                },
               ),
               GestureDetector(
@@ -89,56 +89,56 @@ class _MyHomePageState extends State<MyHomePage> {
                   )
                 ),
                 onTap: (){
-                  Navigator.of(context).pushNamed("kfly");
+                  Navigator.of(context).pushNamed("/fly");
                 }
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Bottom Navigation Bar", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "keleventh");
+                _quickShowPage(context, "/bottomnavigator");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("TabBar and TabBarView", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "ktwelveth");
+                _quickShowPage(context, "/tabbar");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("List View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "klistview");
+                _quickShowPage(context, "/listview");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("Grid View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kgridview");
+                _quickShowPage(context, "/gridview");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Stack ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kstack");
+                _quickShowPage(context, "/stack");
                },
               ),
               RaisedButton(
                 color: Colors.blueAccent,
                 child: Text("Custom Sroll View ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "kcustomsv");
+                _quickShowPage(context, "/customsv");
                },
               ),
               RaisedButton(
                 color: Colors.grey,
                 child: Text("Layout ", style: TextStyle(color: Colors.white, fontSize: 20.0),),
                 onPressed: (){
-                _quickShowPage(context, "klayout");
+                _quickShowPage(context, "/layout");
                },
               ),
             ] 
