@@ -33,6 +33,7 @@ class _GesturesScalePageState extends State<GesturesScalePage> {
           _transformScaleAndTranslate(),
           //_trnasformMatrix4(),
           _positionedStatusBar(context),
+          _positionedInkWellAndInkResponse(context),
         ],
       ),
       onScaleStart: _onScaleStart,
@@ -150,5 +151,65 @@ class _GesturesScalePageState extends State<GesturesScalePage> {
     _currentOffset = Offset.zero;
     _lastScale = 1.0;
     _currentScale = 1.0;
+  }
+
+  Positioned _positionedInkWellAndInkResponse(BuildContext context){
+    return Positioned(
+      top: 50.0,
+      width: MediaQuery.of(context).size.width,
+      child: Container(
+        color: Colors.white54,
+        height: 56.0,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            InkWell(
+              child: Container(
+                height: 48.0,
+                width: 128.0,
+                color: Colors.black12,
+                child: Icon(
+                  Icons.touch_app,
+                  size: 32,
+                ),
+              ),
+              splashColor: Colors.lightGreenAccent,
+              highlightColor: Colors.lightBlueAccent,
+              onTap: _setScaleSmall,
+              onDoubleTap: _setScaleBig,
+              onLongPress: _onLongPress,
+            ),
+            InkResponse(
+              child: Container(
+                height: 48.0,
+                width: 128.0,
+                color: Colors.black12,
+                child: Icon(
+                  Icons.touch_app,
+                  size: 32,
+                ),
+              ),
+              splashColor: Colors.lightGreenAccent,
+              highlightColor: Colors.lightBlueAccent,
+              onTap: _setScaleSmall,
+              onDoubleTap: _setScaleBig,
+              onLongPress: _onLongPress,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _setScaleSmall(){
+    setState(() {
+      _currentScale = 0.5;
+    });
+  }
+
+  void _setScaleBig(){
+    setState(() {
+      _currentScale = 16.0;
+    });
   }
 }
