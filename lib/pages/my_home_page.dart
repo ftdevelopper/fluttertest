@@ -149,6 +149,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 _quickShowPage(context, "/draganddrop");
                },
               ),
+              RaisedButton(
+                color: Colors.grey,
+                child: Text("Gestures and Scale", style: TextStyle(color: Colors.white, fontSize: 20.0),),
+                onPressed: (){
+                _quickShowPage(context, "/gesturesscale");
+               },
+              ),
             ] 
           ),
         )

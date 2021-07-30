@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:proyect_first/pages/gesture_detactor_pages/drag_and_drop_page.dart';
+import 'package:proyect_first/pages/moving_and_scaling_page.dart';
 import 'pages/animation_page.dart';
 import 'pages/basic_widgets_page.dart';
 import 'pages/bottom_navigator_page.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         "/customsv":(BuildContext context) => CustomScrollViewPage(),
         "/layout":(BuildContext context) => LayoutPage(),
         "/draganddrop":(BuildContext context) => DragAndDropPage(),
+        "/gesturesscale":(BuildContext context) => GesturesScalePage(),
       },
     );
   }
